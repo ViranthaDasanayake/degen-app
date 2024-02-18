@@ -1,1 +1,85 @@
-/* You can add global styles to this file, and also import other style files */
+.p-toast {
+    opacity: 0.9;
+    width: 400px !important;
+    z-index: 10;
+
+    .p-toast-message {
+        margin: 0 0 16px 0;
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+        border-radius: 3px;
+        color: white;
+
+        .p-toast-message-content {
+            padding: 16px;
+            border-width: 0 0 0 6px;
+            align-items: center;
+
+            h3 {
+                font-size: 16px;
+            }
+
+            .p-toast-message-text {
+                margin: 0 0 0 16px;
+            }
+
+            .p-toast-message-icon {
+                font-size: 32px;
+            }
+
+            .p-toast-summary {
+                font-weight: 700;
+                font-size: 14px;
+                color: #fff;
+            }
+
+            .p-toast-detail {
+                margin: 8px 0 0 0;
+            }
+        }
+
+        .p-toast-icon-close {
+            width: 32px;
+            height: 32px;
+            background: transparent;
+            transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+            align-items: flex-start;
+            position: absolute !important;
+            right: 0;
+            top: 10px;
+            color: #fff;
+            border: none;
+        }
+
+        &.p-toast-message-info {
+            background: grey;
+            border: solid grey;
+            border-width: 0 0 0 6px;
+        }
+
+        &.p-toast-message-success {
+            background: #fb8304;
+            border: solid #fb8304;
+            border-width: 0 0 0 6px;
+        }
+
+        &.p-toast-message-warn {
+            background: red;
+            border: solid red;
+            border-width: 0 0 0 6px;
+        }
+
+        &.p-toast-message-error {
+            background: yellow;
+            border: solid yellow;
+            border-width: 0 0 0 6px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .p-toast {
+        .p-toast-message {
+            margin-left: 50px;
+        }
+    }
+}

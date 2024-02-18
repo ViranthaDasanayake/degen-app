@@ -1,7 +1,7 @@
 <section class="first-page">
     <app-header></app-header>
     <div class="row">
-        <div class="content-col col-6">
+        <div class="content-col col-12 col-md-6">
             <div class="row">
                 <span class="main-title-1-text">DEGEN</span>
                 <span class="main-title-2-text">THE ART</span>
@@ -14,7 +14,7 @@
                 <button class="button">LIVE CHART</button>
             </div>
         </div>
-        <div class="col-6 logo-col">
+        <div class="col-12 col-md-6 logo-col">
             <img alt="DEGEN THE ART logo" class="logo" src="../../assets/images/logo.png">
         </div>
     </div>
@@ -22,22 +22,73 @@
         <div class="content-col col">
             <div class="contract-text-div">CONTRACT - </div>
             <div class="code-row">9RQWJYXPF8CC4RFXU6LQJS3WR8T0SRWX7XYAHG0R1KEE</div>
-            <span class="copy-icon copy-btn">
-                <!-- Your copy icon here -->
-                Click to Copy
-            </span>
+            <button class="copy-btn" (click)="onCopy('9RQWJYXPF8CC4RFXU6LQJS3WR8T0SRWX7XYAHG0R1KEE')">
+                <i class="fa-regular fa-copy"></i>
+            </button>
         </div>
     </div>
 </section>
 
 <section class="second-page">
-
+    <div class="row">
+        <div class="img-col-second col-12 col-sm-6">
+            <img alt="DEGEN THE ART second page image" class="img-second-page" src="../../assets/images/2_icon.png">
+        </div>
+        <div class="chart-content col-12 col-sm-6">
+            <div class="second-page-content-row row">
+                <span class="second-title-1-text">DEGEN: THE HIGH RISK CRYPTO TRADERS MAKING MILLIONS FROM
+                    NOTHING!</span>
+                <span class="second-title-2-text">"DEGEN ISN'T A COMMUNITY, DEGEN IS A WAY OF LIFE"</span>
+            </div>
+            <div class="chart-row-second row">
+                <video class="chart-second-page" autoplay muted loop>
+                    <source src="../../assets/images/coin.webm" type="video/webm">
+                </video>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="third-page">
-
+    <div class="row">
+        <div class="img-col-third col-12 col-sm-6">
+            <img alt="DEGEN THE ART third page image" class="img-third-page" src="../../assets/images/3_icon.png">
+        </div>
+        <div class="chart-content col-12 col-sm-6">
+            <div class="third-page-content-row row">
+                <span class="third-title-1-text">XXXXXXXXXXXXXXXXXX</span>
+                <span class="third-title-1-text">XXXX</span>
+                <span class="third-title-1-text">X</span>
+                <span class="third-title-1-text">X</span>
+                <span class="third-title-1-text">X</span>
+                <span class="third-title-1-text">X</span>
+                <span class="third-title-1-text">XXXXXXXXXXXXXXXXXX</span>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="fourth-page">
-
+    <div class="join-row row">
+        <div class="join-col col">
+            <span class="fourth-title-1-text">JOIN THE DEGEN CULTURE</span>
+            <img src="../../assets/images/telegram.png" alt="telegram logo" />
+        </div>
+    </div>
+    <div class="img-row-fourth row">
+        <img alt="DEGEN THE ART join twitter image" class="img-fourth-page" src="../../assets/images/x_banner.png">
+    </div>
+    <div class="buy-row row">
+        <div class="col-12 col-sm-4 col-md-5 text-col">
+            <span class="fourth-title-1-text">BE A REAL DEGEN IN THE SPACE</span>
+        </div>
+        <div class="col-12 col-sm-4 col-md-2 button-col">
+            <button class="button">BUY NOW</button>
+        </div>
+        <div class="col-12 col-sm-4 col-md-5 text-col">
+            <span class="fourth-title-1-text">BE A REAL DEGEN IN THE SPACE</span>
+        </div>
+    </div>
 </section>
+
+<p-toast></p-toast>
